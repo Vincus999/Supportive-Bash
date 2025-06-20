@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# To run this script you should download "screen" to your server 
 SESSION="session"
 
 # Starting new screen session (detach mode)
