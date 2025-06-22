@@ -28,7 +28,6 @@ then
 	exit 1
 fi
 
-
 # Converting to seconds
 SECONDS=$((NAP * 60))
 
@@ -45,7 +44,6 @@ echo -e "\033[1;35m Rest well! Your work will be there when you rested yourself.
 	done
 ) &
 
-
 # Store the PID of the countdown process
 PID=$!
 
@@ -59,11 +57,10 @@ wait $PID 2>/dev/null
 # Wake up message with visual effects
 echo -e "\n\n\033[1;32m* * * * * * * * * * * * * * * * * * * *\033[0m"
 echo -e "\033[1;32m*                                     *\033[0m"
-echo -e "\033[1;32m*   \033[1;37mYour ${NAP_TIME}-minute nap is over!   \033[1;32m*\033[0m"
-echo -e "\033[1;32m*   \033[1;37mTime to get back to work!        \033[1;32m*\033[0m"
+echo -e "\033[1;32m*   \033[1;37m Your ${NAP} minute nap is over!       \033[1;32m*\033[0m"
+echo -e "\033[1;32m*   \033[1;37m It is time to get back to work!  \033[1;32m*\033[0m"
 echo -e "\033[1;32m*                                     *\033[0m"
 echo -e "\033[1;32m* * * * * * * * * * * * * * * * * * * *\033[0m\n"
-
 
 # Exit
 exit
