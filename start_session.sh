@@ -5,9 +5,9 @@ SESSION="session"
 # Starting new screen session (detach mode)
 screen -dmS "$SESSION"
 
-# 0. Archiver
-screen -S "$SESSION" -p 0 -X screen -t "Archiver"
-screen -S "$SESSION" -p 0 -X stuff "echo 'Hacsi'\n"
+# 0. process
+screen -S "$SESSION" -p 0 -X screen -t "Process"
+screen -S "$SESSION" -p 0 -X stuff "echo 'Process'\n"
 
 # 1. htop
 screen -S "$SESSION" -X screen -t "htop"
